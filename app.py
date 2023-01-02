@@ -18,16 +18,12 @@ def reg_student():
         if student_name.strip() == "":
             print("Error: Student name cannot be empty.")
         else:
-            cursor.execute(f"SELECT student_id FROM students WHERE student_name = '{student_name}'")
-            student = cursor.fetchone()
-            if student is None:
+                cursor.execute(f"SELECT student_id FROM students WHERE student_name = '{student_name}'")
+                student = cursor.fetchone()
                 cursor.execute(f"INSERT INTO students (student_name) VALUES ('{student_name}')")
                 conn.commit()
                 print("student_name is added ")
-            else:
-                print("Error: Student name already exists.")
-
-            break
+                break
     while True:
 
         age = int(input("Enter Student Birdth Date: "))
