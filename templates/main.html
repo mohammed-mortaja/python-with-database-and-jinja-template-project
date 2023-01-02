@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Student Management System</title>
+    <style>
+        /* Style the navigation menu */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            float: left;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        .a {
+            background-color: #ddd;
+        }
+
+        .a {
+            color: red;
+        }
+
+        /* Style the content area */
+        main {
+            padding-top: 80px;
+            width: 80%;
+            height: 40vh;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 350px;
+
+        }
+
+        .card-bg-color {
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+
+        .card-bg-color:hover {
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+    </style>
+
+</head>
+
+<body class="bg-secondary">
+    <!-- Navigation menu -->
+    <nav>
+        <a class="a" href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/students">Students</a>
+        <a href="/course_schedules">Course Schedules</a>
+        <a href="/api/student_details?api_key=abc123&student_id=1">API (student_details)</a>
+        <a href="/api/students?api_key=abc123">API (all students)</a>
+
+    </nav>
+    <!-- Content area -->
+    <main>
+        <h1>Welcome to the Student Management System</h1>
+ <div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card mt-4" style="background-color: rgba(0, 10, 50, 50.7); color: white;">
+        <div class="card-body">
+          <h4 class="card-title">Courses</h4>
+          <p class="card-text">View the list of available courses and register for a new course.</p>
+          <a href="/courses" class="btn btn-success">Go to Courses</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card mt-4" style="background-color: rgba(0, 10, 50, 50.7); color: white;">
+        <div class="card-body">
+          <h4 class="card-title">Students</h4>
+          <p class="card-text">View the list of registered students and add a new student.</p>
+          <a href="/students" class="btn btn-success">Go to Students</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card mt-4" style="background-color: rgba(0, 10, 50, 50.7); color: white;">
+        <div class="card-body">
+          <h4 class="card-title">Course Schedules</h4>
+          <p class="card-text">View the schedules for each course and add a new schedule.</p>
+          <a href="/course_schedules" class="btn btn-success">Go to Course Schedules</a>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-4">
+      <div class="card mt-4" style="background-color: rgba(0, 10, 50, 50.7); color: white;">
+        <div class="card-body">
+          <h4 class="card-title">API (student_details)</h4>
+          <p class="card-text">Use the API to retrieve a list of all students.</p>
+          <a href="/api/student_details?api_key=abc123&student_id=1" class="btn btn-success">Go to API</a>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-4 mb-5">
+      <div class="card mt-4" style="background-color: rgba(0, 10, 50, 50.7); color: white;">
+        <div class="card-body">
+          <h4 class="card-title">API (all students)</h4>
+          <p class="card-text">Use the API to retrieve a list of all students.</p>
+          <a href="/api/students?api_key=abc123" class="btn btn-success">Go to API</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    </main>
+    <footer>
+        Copyright © 2022 Student Management System
+    </footer>
+</body>
+
+</html>
